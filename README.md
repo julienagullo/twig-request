@@ -17,8 +17,8 @@ Twig extension to extend the request object functionality in a template.
 
 #### Download the release:
 
-- Download [last release](https://github.com/julienagullo/request-twig/releases/)
-- Or clone the repo: `git clone https://github.com/julienagullo/request-twig.git`
+- Download [last release](https://github.com/julienagullo/twig-request/releases/)
+- Or clone the repo: `git clone https://github.com/julienagullo/twig-request.git`
 
 #### Install extension:
 

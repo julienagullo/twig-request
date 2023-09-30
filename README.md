@@ -26,18 +26,25 @@ Twig extension to extend the request object functionality in a template.
 
 #### New Twig functions:
 
+###### Return string
+
 - `get_route()`
 - `get_method()`
 - `get_controller()`
+
+###### Return boolean (can define one or multiple arguments)
+
 - `is_route('name')`
 - `is_method('name')`
-- `is_controller('name')`
+- `is_controller('MyController')`
 
 #### How to use it:
 
 - `{{ get_route()|trans }}`
 - `{{ is_route('name') ? true : false }}`
-- `{% if is_controller('name') and is_method('name') %} active {% endif %}`
+- `{% if is_route('contact_show', 'contact_edit') %} active {% endif %}`
+- `{% if is_controller('MyController') and is_method('show', 'edit') %} active {% endif %}`
+- `{% set is_account = is_controller('AccountController', 'AddressController') %}`
 
 
 ## Contact

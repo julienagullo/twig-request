@@ -60,18 +60,18 @@ class RequestExtension extends AbstractExtension
         return $this->controller;
     }
 
-    public function isRoute(string $route): bool
+    public function isRoute(): bool
     {
-        return $this->getRoute() === $route;
+        return in_array($this->getRoute(), func_get_args());
     }
 
-    public function isMethod(string $method): bool
+    public function isMethod(): bool
     {
-        return $this->getMethod() === $method;
+        return in_array($this->getMethod(), func_get_args());
     }
 
-    public function isController(string $controller): bool
+    public function isController(): bool
     {
-        return $this->getController() === $controller;
+        return in_array($this->getController(), func_get_args());
     }
 }
